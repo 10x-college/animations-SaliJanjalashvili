@@ -1,0 +1,78 @@
+/* reset styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5;
+  color: #676665;
+  background-color: #0F0F0F;
+}
+
+/* header */
+
+header {
+  height: 12.3rem;
+  width: 192rem;
+}
+
+nav {
+  height: 100%;
+  width: 159.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px dashed #262626;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.logo {
+  width: 15.606rem;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 1.2rem;
+  padding: 1.8rem 3rem;
+  color: #676665;
+  font-size: 1.8rem;
+}
+
+.home-button {
+  background-color: #1A1A1A;
+  color: #ffffff;
+}
+
+.products-button {
+  border: 1px dashed #262626;
+  padding: 1.8rem 2.4rem;
+  color: #676665;
+}
+
+.cart-button {
+  background-color: #1A1A1A;
+  padding: 1.8rem;
+}
+
+.cart-button img {
+  width: 2.4rem;
+}
+
+.contact-button {
+  background-color: #AE9B84;
+  padding: 1.8rem 3rem;
+  color: #0F0F0F;
+}
