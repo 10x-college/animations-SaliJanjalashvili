@@ -14,6 +14,18 @@ body {
   background-color: #0F0F0F;
 }
 
+h2 {
+  font-size: 4.8rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
 /* header */
 
 header {
@@ -76,4 +88,129 @@ nav {
   background-color: #AE9B84;
   padding: 1.8rem 3rem;
   color: #0F0F0F;
+}
+
+/* footer */
+
+footer {
+  height: 75.2rem;
+  width: 192rem;
+}
+
+footer > div {
+  width: 159.6rem;
+  margin: 0 auto;
+  border-top: 1px dashed #262626;
+}
+
+/* socials  */
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 34.6rem;
+}
+
+.socials .logo {
+  width: 78.831rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.social-links a {
+  background-color: #D6CDC2;
+  width: 6.6rem;
+  height: 6.6rem;
+  border-radius: 1.2rem;
+  display: grid;
+  place-items: center;
+}
+
+/* newsletter  */
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 34.6rem;
+}
+
+.newsletter h3 {
+  margin-bottom: 3rem;
+}
+
+.newsletter ul li:first-child {
+  list-style: none;
+}
+
+.newsletter ul li:not(:first-child) {
+  list-style: none;
+  position: relative;
+  padding-left: 2.2rem;
+}
+
+.newsletter ul li:not(:first-child)::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #262626;
+  width: 0.6rem;
+  height: 0.6rem;
+}
+
+.newsletter ul {
+  display: flex;
+  gap: 1.6rem;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.subscribe input {
+  width: 47.867rem;
+  height: 6.3rem;
+  background-color: #1A1A1A;
+  color: #676665;
+  border: none;
+  border-radius: 1.2rem;
+  padding: 1.8rem 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.subscribe-input {
+  position: relative;
+}
+
+.subscribe button {
+  position: absolute;
+  right: 2.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.4rem;
+  height: 2.4rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.copyright {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.8rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12.7rem;
+}
+
+.privacy-policy {
+  border-left: 1px solid #262626;
+  padding-left: 1rem;
+  color: #676665;
 }
