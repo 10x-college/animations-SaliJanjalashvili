@@ -26,6 +26,11 @@ h3 {
   color: #ffffff;
 }
 
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
 /* header */
 
 header {
@@ -90,6 +95,101 @@ nav {
   color: #0F0F0F;
 }
 
+/* main  */
+
+main {
+  width: 192rem;
+}
+
+main section {
+  width: 159.6rem;
+  margin: 0 auto;
+}
+
+/* hero  */
+
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% repeat(2, 1fr);
+  grid-template-rows: 62.4rem repeat(2, 1fr);
+  border: 1px dashed #262626;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-top: 6rem;
+}
+
+.hero-image {
+  grid-column: 1 / 4;
+}
+
+.hero-image img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.shop-now-btn {
+  position: absolute;
+  bottom: 41.4rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px dashed #262626;
+  background-color: #1F1F1F;
+  padding: 1.8rem 2.4rem;
+  border-radius: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.shop-now-btn img {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-left: 0.4rem;
+}
+
+.hero-content {
+  grid-row: 2 / 4;
+  padding: 8rem;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.hero-btn {
+  font-family: 'Roboto Mono', monospace;
+  color: #B3B3B2;
+  border: 1px dashed #262626;
+  padding: 1.4rem 2.4rem;
+  border-radius: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.hero-content h2 {
+  margin: 3rem 0;
+}
+
+.hero-box {
+  padding: 7rem 5rem;
+}
+
+.hero-box.box-1,
+.hero-box.box-2 {
+  border-bottom: 1px solid #262626;
+}
+
+.hero-box.box-1,
+.hero-box.box-2,
+.hero-box.box-3,
+.hero-box.box-4 {
+  border-left: 1px solid #262626;
+}
+
 /* footer */
 
 footer {
@@ -97,7 +197,7 @@ footer {
   width: 192rem;
 }
 
-footer > div {
+footer>div {
   width: 159.6rem;
   margin: 0 auto;
   border-top: 1px dashed #262626;
@@ -170,6 +270,8 @@ footer > div {
   font-size: 2rem;
   font-weight: 400;
 }
+
+/* subscribe  */
 
 .subscribe input {
   width: 47.867rem;
