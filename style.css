@@ -99,6 +99,7 @@ nav {
 
 main {
   width: 192rem;
+  padding: 6rem 0;
 }
 
 main section {
@@ -116,7 +117,6 @@ main section {
   border: 1px dashed #262626;
   border-radius: 2rem;
   overflow: hidden;
-  margin-top: 6rem;
 }
 
 .hero-image {
@@ -214,6 +214,10 @@ main section {
   position: relative;
 }
 
+.trends-box h3 {
+  margin-bottom: 1.6rem;
+}
+
 .trends-box.box-1,
 .trends-box.box-2,
 .trends-box.box-4,
@@ -239,6 +243,74 @@ main section {
   width: 17.3rem;
 }
 
+/* questions  */
+
+.questions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 38.6rem repeat(3, 1fr);
+  border: 1px dashed #262626;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-top: 2.4rem;
+}
+
+.questions-header {
+  grid-column: 1 / 3;
+  padding: 8rem;
+  border-bottom: 1px solid #262626;
+  position: relative;
+}
+
+.questions-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28rem;
+}
+
+.questions-header p {
+  margin-top: 3rem;
+}
+
+.questions-btns {
+  display: flex;
+  gap: 1.6rem;
+  margin-top: 5rem;
+}
+
+.questions-btn {
+  font-family: 'Roboto Mono', monospace;
+  color: #B3B3B2;
+  border: 1px dashed #262626;
+  padding: 1.4rem 2.4rem;
+  border-radius: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.questions-box {
+  padding: 6rem;
+  overflow: hidden;
+}
+
+.questions-box h3 {
+  margin-bottom: 1.6rem;
+}
+
+.questions-box.box-1,
+.questions-box.box-3,
+.questions-box.box-5 {
+  border-right: 1px solid #262626;
+}
+
+.questions-box.box-1,
+.questions-box.box-2,
+.questions-box.box-3, 
+.questions-box.box-4{
+  border-bottom: 1px solid #262626;
+}
+  
 /* footer */
 
 footer {
