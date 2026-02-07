@@ -90,9 +90,19 @@ nav {
 }
 
 .nav-container .contact-button {
-  background-color: #AE9B84;
+  border: 1px dashed #262626;
   padding: 1.8rem 3rem;
+  color: #676665;
+}
+
+.nav-container .contact-button:hover,
+.nav-container .products-button:hover,
+.nav-container .home-button:hover,
+.nav-container .cart-button:hover {
+  background-color: #AE9B84;
   color: #0F0F0F;
+  border: 1px solid #AE9B84;
+  transition: all 0.3s ease;
 }
 
 /* main  */
@@ -136,7 +146,7 @@ main section {
 }
 
 .shop-now-btn {
-  border: 1px dashed #262626;
+  position: relative;
   background-color: #1F1F1F;
   padding: 1.8rem 2.4rem;
   border-radius: 1.2rem;
@@ -145,6 +155,51 @@ main section {
   color: #ffffff;
   display: flex;
   align-items: center;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.shop-now-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    #AE9B84,
+    #262626,
+    #AE9B84,
+    #262626,
+    #AE9B84
+  );
+  transform: translate(-50%, -50%);
+  animation: rotateBorder 3s linear infinite;
+  z-index: -2;
+}
+
+.shop-now-btn::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #1F1F1F;
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+@keyframes rotateBorder {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 .shop-now-btn img {
@@ -171,6 +226,14 @@ main section {
   border-radius: 1.2rem;
   font-size: 1.8rem;
   font-weight: 400;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background-color: #AE9B84;
+  color: #0F0F0F;
+  border: 1px solid #AE9B84;
+  transition: all 0.3s ease;
 }
 
 .hero-content h2 {
@@ -290,6 +353,14 @@ main section {
   border-radius: 1.2rem;
   font-size: 1.8rem;
   font-weight: 400;
+  cursor: pointer;
+}
+
+.collection-btn:hover {
+  background-color: #AE9B84;
+  color: #0F0F0F;
+  border: 1px solid #AE9B84;
+  transition: all 0.3s ease;
 }
 
 .collection-box {
@@ -299,6 +370,11 @@ main section {
 
 .collection-image {
   width: 100%;
+}
+
+.collection-image:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 .details-container {
@@ -379,6 +455,14 @@ main section {
   border-radius: 1.2rem;
   font-size: 1.8rem;
   font-weight: 400;
+  cursor: pointer;
+}
+
+.questions-btn:hover {
+  background-color: #AE9B84;
+  color: #0F0F0F;
+  border: 1px solid #AE9B84;
+  transition: all 0.3s ease;
 }
 
 .questions-box {
@@ -388,6 +472,13 @@ main section {
 
 .questions-box h3 {
   margin-bottom: 1.6rem;
+  width: fit-content;
+}
+
+.questions-box h3:hover {
+  color: #AE9B84;
+  transition: all 0.3s ease;
+  cursor: default;
 }
 
 .questions-box.box-1,
@@ -442,6 +533,32 @@ footer>div {
   border-radius: 1.2rem;
   display: grid;
   place-items: center;
+  animation: socialBounce 1.5s linear infinite;
+}
+
+.social-links a:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.social-links a:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.social-links a:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.social-links a:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+@keyframes socialBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 /* newsletter  */
@@ -482,6 +599,13 @@ footer>div {
   font-family: 'Roboto Mono', monospace;
   font-size: 2rem;
   font-weight: 400;
+}
+
+.newsletter ul li:hover {
+  transform: scale(1.1);
+  color: #AE9B84;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 /* subscribe  */
