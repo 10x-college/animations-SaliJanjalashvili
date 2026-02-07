@@ -190,6 +190,55 @@ main section {
   border-left: 1px solid #262626;
 }
 
+/* trends  */
+
+.trends {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 27.3rem repeat(2, 1fr);
+  border: 1px dashed #262626;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-top: 2.4rem;
+}
+
+.trends-header {
+  grid-column: 1 / 4;
+  padding: 8rem;
+  border-bottom: 1px solid #262626;
+}
+
+.trends-box {
+  padding: 6rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.trends-box.box-1,
+.trends-box.box-2,
+.trends-box.box-4,
+.trends-box.box-5 {
+  border-right: 1px solid #262626;
+}
+
+.trends-box.box-1,
+.trends-box.box-2,
+.trends-box.box-3 {
+  border-bottom: 1px solid #262626;
+}
+
+.trends-icon {
+  width: 9.4rem;
+  margin-bottom: 5rem;
+}
+
+.trends-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 17.3rem;
+}
+
 /* footer */
 
 footer {
